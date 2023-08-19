@@ -84,8 +84,12 @@ button {
 .header--nav:nth-of-type(1) > ul > li > a,
 .header--nav:nth-of-type(2) > ul > li > a {
   scroll-behavior: smooth;
-  color: var(--dark-blue);
   text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.header--nav:nth-of-type(2) > ul > li > {
+  color: var(--primary-white);
 }
 .login--btn {
   margin-left: 2rem;
