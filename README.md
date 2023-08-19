@@ -44,18 +44,10 @@ for (let i = 0; i < 5; i++) {
   faqToggleBtn[i].addEventListener("click", () => {
     if (faqToggle[i].style.display == "block") {
       faqToggle[i].style.display = "none";
+      faqToggleBtn[i].innerHTML = arrowUpSvg;
     } else {
       faqToggle[i].style.display = "block";
-      faqToggleBtn[i].innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-        <path
-          fill="none"
-          stroke="hsl(0, 94%, 66%)"
-          stroke-width="3"
-          d="M1 11l8-8 8 8"
-        />
-      </svg>
-      `;
+      faqToggleBtn[i].innerHTML = arrowDownSvg;
     }
   });
 }
